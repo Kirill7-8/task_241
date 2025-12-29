@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e8abbb4d04566e39",
+        "id": "544a3a63a720cd92",
         "type": "tabs",
         "children": [
           {
-            "id": "83253ec5699c447b",
+            "id": "e2257423d3633a28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_lab/Перенаправляем.md",
+                "file": "8-Samba/Шарим (task_1).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Перенаправляем"
+              "title": "Шарим (task_1)"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_lab/Перенаправляем.md",
+                "file": "2_lab/Управление пользователями.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Перенаправляем"
+              "title": "Обратные ссылки для Управление пользователями"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_lab/Перенаправляем.md",
+                "file": "2_lab/Управление пользователями.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Перенаправляем"
+              "title": "Исходящие ссылки из Управление пользователями"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_lab/Перенаправляем.md",
+                "file": "2_lab/Управление пользователями.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Перенаправляем"
+              "title": "Структура Управление пользователями"
             }
           }
         ]
@@ -183,25 +183,50 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "83253ec5699c447b",
+  "active": "4d1513f351c6cfde",
   "lastOpenFiles": [
-    "1_lab/Перенаправляем.pdf",
-    "1_lab/скриншотики/Pasted image 20251222213331.png",
-    "1_lab/скриншотики/Pasted image 20251222212742.png",
-    "1_lab/скриншотики/Pasted image 20251222212451.png",
-    "1_lab/скриншотики/Pasted image 20251222211825.png",
-    "1_lab/скриншотики/Pasted image 20251222192043.png",
-    "1_lab/скриншотики/Pasted image 20251222191700.png",
-    "1_lab/скриншотики/Pasted image 20251222191516.png",
-    "1_lab/скриншотики/Pasted image 20251222191332.png",
-    "1_lab/скриншотики/Pasted image 20251222190749.png",
-    "1_lab/Работа в консольке.md",
-    "1_lab/Перенаправляем.md",
-    "1_lab/Работа в консольке.pdf",
-    "1_lab/скриншотики",
-    "1_lab/скриншотики/Pasted image 20251222174832.png",
-    "Добро пожаловать.md",
-    "2_lab",
-    "1_lab"
+    "8-Samba/скрины/Pasted image 20251229233300.png",
+    "9-Firewall/Открываем firewald (task_2).md",
+    "9-Firewall/Открываем iptables (task_1).md",
+    "10-Network/сети (task_1).md",
+    "10-Network/скрины",
+    "10-Network",
+    "9-Firewall/скрины",
+    "8-Samba/Шарим (task_1).md",
+    "9-Firewall",
+    "1-Work with files/Перенаправляем (2_task).md",
+    "1-Work with files/Работа в консольке (1_task).md",
+    "1-Work with files/Перенаправляем (2_task).pdf",
+    "1-Work with files/скриншотики/Pasted image 20251229224010.png",
+    "1-Work with files/скриншотики/Pasted image 20251229223900.png",
+    "1-Work with files/Работа в консольке (1_task).pdf",
+    "5-Systemd/Журнальчики (task_3).md",
+    "8-Samba/скрины",
+    "7-SSH/Настраиваем (task_1).md",
+    "8-Samba",
+    "7-SSH/Настраиваем (task_1).pdf",
+    "7-SSH/Ключики (task_3).md",
+    "7-SSH/Ключики (task_3).pdf",
+    "7-SSH/скрины/Pasted image 20251229222109.png",
+    "7-SSH/скрины/Pasted image 20251229222056.png",
+    "7-SSH/скрины/Pasted image 20251229221905.png",
+    "7-SSH/скрины/Pasted image 20251229221714.png",
+    "7-SSH/скрины/Pasted image 20251229221542.png",
+    "7-SSH/Конфижим для удобства (task_2).md",
+    "5-Systemd/Юниты (task_1).md",
+    "4-Bash/Скриптуем по полной (task_1).md",
+    "5-Systemd/Пишем юниты (task_2).md",
+    "5-Systemd/скрины/Pasted image 20251229220545.png",
+    "5-Systemd/скрины/Pasted image 20251229220516.png",
+    "5-Systemd/скрины/Pasted image 20251229215236.png",
+    "7-SSH/Без названия.md",
+    "3-File systems/Продолжаем (task_4).md",
+    "2-User manage/Управление пользователями (1_task).md",
+    "2-User manage/Запрещаем (2_task).md",
+    "2025-12-28.md",
+    "3-File systems/Продолжаем (task_3).md",
+    "3-File systems/Структура каталогов (2_task).md",
+    "3-File systems/Файловые системы (1_task).md",
+    "Добро пожаловать.md"
   ]
 }
