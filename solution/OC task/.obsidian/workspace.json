@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9-Firewall/Открываем firewalld (task_2).md",
+                "file": "5-Systemd/Пишем юниты (task_2).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Открываем firewalld (task_2)"
+              "title": "Пишем юниты (task_2)"
             }
           },
           {
@@ -239,26 +239,29 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "4d1513f351c6cfde",
+  "active": "caebb0a174596c46",
   "lastOpenFiles": [
-    "9-Firewall/скрины/Pasted image 20251230115450.png",
-    "9-Firewall/скрины/Pasted image 20251230115029.png",
-    "9-Firewall/скрины/Pasted image 20251230114643.png",
-    "9-Firewall/скрины/Pasted image 20251230114611.png",
+    "5-Systemd/Пишем юниты (task_2).pdf",
+    "5-Systemd/скрины/Pasted image 20251230212412.png",
+    "5-Systemd/скрины/Pasted image 20251230212103.png",
+    "5-Systemd/скрины/Pasted image 20251230212011.png",
+    "5-Systemd/скрины/Pasted image 20251230211952.png",
+    "5-Systemd/скрины/Pasted image 20251230211737.png",
+    "5-Systemd/скрины/Pasted image 20251230211459.png",
+    "5-Systemd/скрины/Pasted image 20251230211348.png",
+    "5-Systemd/скрины/Pasted image 20251230211301.png",
+    "5-Systemd/скрины/Pasted image 20251230211206.png",
+    "5-Systemd/Юниты (task_1).md",
+    "10-Network/сети (task_1).md",
+    "10-Network/сети (task_1).pdf",
+    "10-Network/скрины/Pasted image 20251230203908.png",
+    "9-Firewall/Открываем firewalld (task_2).md",
+    "9-Firewall/Открываем firewalld (task_2).pdf",
     "8-Samba/Шарим (task_1).md",
     "7-SSH/Настраиваем (task_1).md",
     "7-SSH/Ключики (task_3).md",
     "7-SSH/Конфижим для удобства (task_2).md",
-    "9-Firewall/Открываем firewalld (task_2).md",
-    "9-Firewall/скрины/Pasted image 20251230104659.png",
-    "9-Firewall/скрины/Pasted image 20251230104558.png",
-    "9-Firewall/скрины/Pasted image 20251230104445.png",
-    "9-Firewall/скрины/Pasted image 20251230104314.png",
-    "9-Firewall/скрины/Pasted image 20251230104250.png",
     "9-Firewall/Открываем iptables (task_1).md",
-    "9-Firewall/скрины/Pasted image 20251230103747.png",
-    "9-Firewall/скрины/Pasted image 20251230103438.png",
-    "10-Network/сети (task_1).md",
     "9-Firewall/Открываем iptables (task_1).pdf",
     "10-Network/скрины",
     "10-Network",
@@ -270,9 +273,6 @@
     "1-Work with files/Работа в консольке (1_task).pdf",
     "5-Systemd/Журнальчики (task_3).md",
     "8-Samba/скрины",
-    "8-Samba",
-    "7-SSH/Настраиваем (task_1).pdf",
-    "5-Systemd/Юниты (task_1).md",
     "4-Bash/Скриптуем по полной (task_1).md",
     "5-Systemd/Пишем юниты (task_2).md",
     "7-SSH/Без названия.md",
