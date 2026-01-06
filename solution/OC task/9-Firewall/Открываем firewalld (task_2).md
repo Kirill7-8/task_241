@@ -42,12 +42,18 @@ sudo firewall-cmd --reload
 ## 7. Если не получилось то откройте нужные порты
 ```bash
 sudo firewall-cmd --permanent --add-service=samba
+sudo firewall-cmd --permanent --add-service=samba-client
 ```
-и еще конфиг самбы меняем (по другому не работало)
-![[Pasted image 20251230115450.png]]
 результат
 ![[Pasted image 20251230114643.png]]
 (я тестировал уже прост)
+еще добавляем эту строку в файл конфигурации самбы
+```bash
+[global]
+    map to guest = Bad User
+```
+сработало!!!
+![[Pasted image 20260106135807.png]]
 ## 8. Сделайте так чтобы изменения были постоянными
 ```bash
 firewall-cmd --runtime-to-permanent
