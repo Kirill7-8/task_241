@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "393eb3953fe2fd4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "9-Firewall/Открываем firewalld (task_2).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Открываем firewalld (task_2)"
-            }
-          },
-          {
-            "id": "29ba0245fe5cea23",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "9-Firewall/Открываем iptables (task_1).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Открываем iptables (task_1)"
-            }
-          },
-          {
             "id": "6d4e6a3b5e150dcb",
             "type": "leaf",
             "state": {
@@ -211,12 +183,13 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "393eb3953fe2fd4f",
+  "active": "6d4e6a3b5e150dcb",
   "lastOpenFiles": [
-    "Pasted image 20260106135807.png",
-    "8-Samba/Шарим (task_1).md",
-    "1-Work with files/Работа в консольке (1_task).md",
     "9-Firewall/Открываем firewalld (task_2).md",
+    "8-Samba/Шарим (task_1).md",
+    "8-Samba/скрины/Pasted image 20260106142655.png",
+    "8-Samba/скрины/Pasted image 20260106135807.png",
+    "1-Work with files/Работа в консольке (1_task).md",
     "9-Firewall/Открываем iptables (task_1).md",
     "1-Work with files/Перенаправляем (2_task).md",
     "1-Work with files/Работа в консольке (1_task).pdf",
@@ -234,11 +207,9 @@
     "5-Systemd/скрины/Pasted image 20251230211459.png",
     "5-Systemd/скрины/Pasted image 20251230211348.png",
     "5-Systemd/скрины/Pasted image 20251230211301.png",
-    "5-Systemd/скрины/Pasted image 20251230211206.png",
     "5-Systemd/Юниты (task_1).md",
     "10-Network/сети (task_1).md",
     "10-Network/сети (task_1).pdf",
-    "10-Network/скрины/Pasted image 20251230203908.png",
     "9-Firewall/Открываем firewalld (task_2).pdf",
     "9-Firewall/Открываем iptables (task_1).pdf",
     "10-Network/скрины",

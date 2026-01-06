@@ -3,6 +3,29 @@
 sudo apt-get install samba samba-client
 ```
 ![[Pasted image 20251229233300.png]]
+(P.S. от 06.01.25 я долго не мог запустить самбу, поэтому ниже важный параметр для работоспособности)
+Вот такие параметры в настройках виртуалки
+![[Pasted image 20260106142655.png]]
+```bash
+[global]
+        workgroup = SAMBA
+        security = user
+        map to guest = Bad User
+
+        passdb backend = tdbsam
+        guest account = nobody
+        printing = cups
+        printcap name = cups
+        load printers = yes
+        cups options = raw
+        server min protocol = SMB2
+        server max protocol = SMB3
+        interfaces = 0.0.0.0
+        bind interfaces only = no
+        # Install samba-usershares package for support
+        include = /etc/samba/usershares.conf
+
+```
 ## 2. Что такое общая папка, зачем оно может быть нужно?    
 Общая папка - это каталог на Linux-компьютере, к которому другие компьютеры могут подключаться по сети и работать с файлами. Нужна она для передачи файлов между компьютерами, общий доступ к документам, сетевое хранилище, работа нескольких пользователей с одними файлами
 ## 3. Создайте общую папку без пароля с правами только на чтение файлов
