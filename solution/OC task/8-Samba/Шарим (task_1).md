@@ -26,6 +26,9 @@ sudo apt-get install samba samba-client
         include = /etc/samba/usershares.conf
 
 ```
+И еще важный момент. Далее я создал на вируталке вторую вм к которой мы и будем подключаться по самбе
+узнаем айпишник второй виртуалки 
+![](https://webattach.mail.yandex.net/message_part_real/?sid=YWVzX3NpZDp7ImFlc0tleUlkIjoiMTc4IiwiaG1hY0tleUlkIjoiMTc4IiwiaXZCYXNlNjQiOiI3cWZOMDQvWXgzVk5zYlNyUm15dFd3PT0iLCJzaWRCYXNlNjQiOiJCSXJtK2h1RkpiWlhRN1pSMEJnWktkYnF6dTJCRm42bzFVU0RzZ05zVDk5czF2bzlsNkdlUCtCU1BuMG5uc2p3cm0wTDAwbzFaVFJFb0szN2JwSHJZcEZZTUdod3AyRy94S05PRlllUktNZHFPU3E4MnBwV21hMEltWTRnaGhWeCIsImhtYWNCYXNlNjQiOiJBZ3VFemxIdnVSWStHUVllNkdlbDlxYjNvMExDZUZSVE1Yd3ppQ2I1SXE0PSJ9&no_disposition=y&yandex_class=yandex_new_inline_YWVzX3NpZDp7ImFlc0tleUlkIjoiMTc4IiwiaG1hY0tleUlkIjoiMTc4IiwiaXZCYXNlNjQiOiJ0dmpndVdCd0loNGp2ZU1BUWlnSTVnPT0iLCJzaWRCYXNlNjQiOiJ2T3RBZlUwYmJncmo3SHZDaFdxRHdReER4aWJsVE1GN0ZxMjVmMERzTnJvSDZNMnI3cXZpZmZjNVlIcmJuZEx6Ylkyem0xOWlWd29YcS9INHlVOXB1bWo3Z1VPMUVCSk1PSHZLTks0c2N3b0ova1hNZjQ1UC9Denk5TXhjUHFzRCIsImhtYWNCYXNlNjQiOiJRS2FRbXpUVVRZbXdGNi9QRjdiZGRlbDJJU3RsN3ZDRFNoMmx1QnZ1RHp3PSJ9)
 ## 2. Что такое общая папка, зачем оно может быть нужно?    
 Общая папка - это каталог на Linux-компьютере, к которому другие компьютеры могут подключаться по сети и работать с файлами. Нужна она для передачи файлов между компьютерами, общий доступ к документам, сетевое хранилище, работа нескольких пользователей с одними файлами
 ## 3. Создайте общую папку без пароля с правами только на чтение файлов
@@ -48,11 +51,17 @@ sudo systemctl restart smb
 ```
 ![[Pasted image 20251230000539.png]]
 ![[Pasted image 20251230000522.png]]
+Проверка
+![[Pasted image 20260108134102.png]]
+![[Pasted image 20260108134527.png]]
+Как видно создать мы ничего не можем, так как у нас доступ только на чтение
 ## 4. Создайте общую папку с паролем с правами на чтение и запись
 ```bash
 sudo mkdir -p /srv/samba/private_rw # также рекурсивно создаем папки
-sudo chmod 770 /srv/samba/private_rw # выдаем права
-sudo smbpasswd -a <Юзер> # Добавляем пользователя в Samba и задаем пароль
+sudo chmod 777 /srv/samba/private_rw # выдаем права
+sudo useradd <юзер> # создаем пользователя
+sudo passwd <юзер>
+sudo smbpasswd -a <Юзер> # добавляем пользователя в Samba и задаем пароль
 sudo nano /etc/samba/smb.conf # редактируем конфиг
 ```
 
@@ -63,11 +72,15 @@ path = /srv/samba/private_rw
 browseable = yes
 guest ok = no
 read only = no
-valid users = <юзер> # опционально
+valid users = <юзер> 
 ```
 ```bash
 sudo systemctl restart smb # перезапуск
 ```
+Проверка
+![[Pasted image 20260110030437.png]]
+(я уже добавил в конфиг sambuser с паролем 7869). 
+Как видно, если попробовать подключиться с неправильным паролем или без пароля вовсе, то подключиться не получиться
 ## 5. Создайте общую папку с доступом для какой-то группы с полными правами
 ```bash
 sudo groupadd test_group # создаем группу
@@ -77,7 +90,7 @@ sudo usermod -aG test_group user3 # добавляем пользователя 
 sudo usermod -aG test_group user4 # добавляем пользователя 2
 sudo mkdir -p /srv/samba/group_full # создаем папку
 sudo chown :test_group /srv/samba/group_full # Назначаем группу
-sudo chmod 770 /srv/samba/group_full # выдаем права
+sudo chmod 777 /srv/samba/group_full # выдаем права
 ```
 Добавляем в конфиг
 ```bash
@@ -89,6 +102,7 @@ read only = no
 valid users = @test_group
 ```
 ![[Pasted image 20251230010449.png]]
+
 ## 6. Создайте общую папку в которой у одной группы будет полный доступ, а у другой только доступ на чтение. Третья группа не должна иметь к ней доступа
 ```bash
 # создаем группы
